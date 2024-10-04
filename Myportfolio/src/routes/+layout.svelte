@@ -74,10 +74,10 @@
     <div class="header">
         <div class="title">MY PORTFOLIO</div>
         <div class="tabs">
-            <a class="tab" href="/home">Home</a>
-            <a class="tab" href="/about">About</a>
-            <a class="tab" href="/portfolio">Portfolio</a>
-            <a class="tab" href="/contact">Contact</a>
+            <a class="tab" href="/Home">Home</a>
+            <a class="tab" href="/About">About</a>
+            <a class="tab" href="/Portfolio">Portfolio</a>
+            <a class="tab" href="/Contact">Contact</a>
         </div>
     </div>
 
