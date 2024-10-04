@@ -20,19 +20,16 @@
         <div>
             <p>There are many days when I find myself thinking, "Can I really do this?" Creativity sometimes eludes me, and I hesitate to try new things, fearing I’ll just mess them up. At times, I feel lost and unsure of whether what I'm doing is right. The fear of failure can be overwhelming, causing me to avoid challenges altogether. But these experiences have taught me resilience and the importance of perseverance.</p>
         </div>
-        <div>
-            <p>Despite these hurdles, I keep pushing forward. One of my most memorable experiences as a student developer began with my first proposed project: a simple to-do list for personal use. Working alongside my friend, I realized its potential to help others, which led us to transform it into a group manager application called "We Manage." Through continuous updates and collaboration, we simplified its features, making it more user-friendly and efficient. This project taught me the value of teamwork and the impact of technology in solving everyday problems.</p>
-        </div>
+<div>
+            <p style="margin-top: 20px;">Despite these hurdles, I keep pushing forward. One of my most memorable experiences as a student developer began with my first proposed project: a simple to-do list for personal use. Working alongside my friend, I realized its potential to help others, which led us to transform it into a group manager application called "We Manage." Through continuous updates and collaboration, we simplified its features, making it more user-friendly and efficient. This project taught me the value of teamwork and the impact of technology in solving everyday problems.</p>
+        </div></div>
+
+    <!-- Flexbox container for side images, outside the main content -->
+    <div class="flex justify-between mx-8 mt-2 flex-wrap">
+        <!-- Image on the left side of the container -->
+        <img src="images/about4.jpg" class="w-40 h-40 object-cover rounded-lg border-4 border-white shadow-lg mr-2 mb-2" alt="Left Image">
         
-        <!-- Flexbox container for side images -->
-        <div class="flex justify-between mx-2 mt-2 flex-wrap">
-            <!-- Image on the left side of the container, adjusted to move outward -->
-            <!-- svelte-ignore a11y-img-redundant-alt -->
-            <img src="images/about4.jpg" class="w-32 h-32 object-cover rounded-lg border-4 border-white shadow-lg ml-0 mb-2" alt="Left Image">
-            
-            <!-- Image on the right side of the container, adjusted to move outward -->
-            <!-- svelte-ignore a11y-img-redundant-alt -->
-            <img src="images/about3.jpg" class="w-32 h-32 object-cover rounded-lg border-4 border-white shadow-lg ml-0 mb-1" alt="Right Image">
-        </div>
+        <!-- Image on the right side of the container -->
+        <img src="images/about3.jpg" class="w-40 h-40 object-cover rounded-lg border-4 border-white shadow-lg mr-2 mb-2" alt="Right Image">
     </div>
 </main>
