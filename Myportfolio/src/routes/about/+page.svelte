@@ -27,9 +27,11 @@
     <!-- Flexbox container for side images, outside the main content -->
     <div class="flex justify-between mx-8 mt-2 flex-wrap">
         <!-- Image on the left side of the container -->
+        <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src="images/about4.jpg" class="w-40 h-40 object-cover rounded-lg border-4 border-white shadow-lg mr-2 mb-2" alt="Left Image">
         
         <!-- Image on the right side of the container -->
+        <!-- svelte-ignore a11y-img-redundant-alt -->
         <img src="images/about3.jpg" class="w-40 h-40 object-cover rounded-lg border-4 border-white shadow-lg mr-2 mb-2" alt="Right Image">
     </div>
 </main>
