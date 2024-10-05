@@ -5,12 +5,13 @@ export default {
 
   theme: {
     extend: {
-
-      fontFamily: {
-    'serif': ['Merriweather', 'serif'], // Add Merriweather font here
+      colors: {
+        primary: '#9948af', // Custom color for your project
+        secondary: '#14171A', // Another custom color if needed
+        accent: '#F5A623', // Example color
+      },
+    },
   },
-    }
-  },
 
-  plugins: []
+  plugins: [],
 } as Config;
