@@ -55,7 +55,6 @@
         color: #d291ff;
     }
 
-   
 
     .text-label {
         display: inline; /* Initially show text */
@@ -73,8 +72,8 @@
         height: 50px;
     }
 
-    /* Media query for smaller screens */
-    @media (max-width: 768px) {
+    /* Media query for smaller screens (less than 786px) */
+    @media (max-width: 500px) {
         header {
             flex-direction: column;
             align-items: flex-start;
@@ -91,11 +90,10 @@
             padding: 10px 0;
         }
 
+
         .text-label {
             display: none; /* Hide text labels on smaller screens */
         }
-
-        
     }
 </style>
 
@@ -104,19 +102,19 @@
         <h1 class="title">MY PORTFOLIO</h1>
         <nav class="tabs">
             <a class="tab" href="/Home" aria-label="Home">
-                <HomeOutline class="icon" size="15" />
+                <HomeOutline class="icon" />
                 <span class="text-label">Home</span>
             </a>
             <a class="tab" href="/About" aria-label="About">
-                <FileLinesOutline class="icon" size="15" />
+                <FileLinesOutline class="icon" />
                 <span class="text-label">About</span>
             </a>
             <a class="tab" href="/Portfolio" aria-label="Portfolio">
-                <FolderOpenSolid class="icon" size="15" />
+                <FolderOpenSolid class="icon" />
                 <span class="text-label">Portfolio</span>
             </a>
             <a class="tab" href="/Contact" aria-label="Contact">
-                <AddressBookSolid class="icon" size="15" />
+                <AddressBookSolid class="icon" />
                 <span class="text-label">Contact</span>
             </a>
         </nav>
