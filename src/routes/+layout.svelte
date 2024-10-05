@@ -1,22 +1,20 @@
 <script>
     // @ts-nocheck
-    import "../app.css"; // Import your CSS styles
+    import "../app.css"; 
     import { onMount } from 'svelte';
     import { goto } from '$app/navigation';
-
-    // Correctly import icons from flowbite-svelte-icons
     import { HomeOutline, FileLinesOutline, AddressBookSolid, FolderOpenSolid } from 'flowbite-svelte-icons';
 
     export let name = "PRINCESS DIANE RODRIGUEZ URBANO";
 
     onMount(() => {
-        // Navigate to the home page on load (optional)
+   
         goto('/Home');
     });
 </script>
 
 <style>
-    /* Header styles */
+
     header {
         display: flex;
         justify-content: space-between;
@@ -33,13 +31,12 @@
         margin-left: 10px;
     }
 
-    /* Tabs styles */
     nav.tabs {
         display: flex;
         flex-wrap: wrap;
     }
 
-    nav.tabs a.tab {
+        nav.tabs a.tab {
         margin: 5px 10px;
         padding: 10px 20px;
         background-color: #d291ff;
@@ -57,10 +54,10 @@
 
 
     .text-label {
-        display: inline; /* Initially show text */
+        display: inline; 
     }
 
-    /* Footer styles */
+
     footer {
         background-color: #d291ff;
         color: white;
@@ -72,7 +69,7 @@
         height: 50px;
     }
 
-    /* Media query for smaller screens (less than 786px) */
+
     @media (max-width: 500px) {
         header {
             flex-direction: column;
@@ -92,7 +89,7 @@
 
 
         .text-label {
-            display: none; /* Hide text labels on smaller screens */
+            display: none;
         }
     }
 </style>
@@ -120,7 +117,7 @@
         </nav>
     </header>
 
-    <!-- This slot will render the content of the current page -->
+    
     <slot />
 </main>
 

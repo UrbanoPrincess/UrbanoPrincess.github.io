@@ -1,7 +1,6 @@
 <script>
     // @ts-nocheck
   
-    // Array of images for the image mapping section
     export let imageMapping = [
         { src: 'images/Image Mapping1.png', alt: 'Image 1' },
         { src: 'images/Image Mapping2.png', alt: 'Image 2' },
@@ -9,7 +8,6 @@
         { src: 'images/Image Mapping4.png', alt: 'Image 4' },
     ];
   
-    // Array of images for the game section
     export let gameImages = [
         { src: 'images/Game0.png', alt: 'Game 0' },
         { src: 'images/Game1.png', alt: 'Game 1' },
@@ -17,7 +15,6 @@
         { src: 'images/Game3.png', alt: 'Game 3' },
     ];
   
-    // Array of images for the WeManage application
     export let weManageImages = [
         { src: 'images/Login-WeManage.png', alt: 'Login WeManage' },
         { src: 'images/Register-WeManage.png', alt: 'Register WeManage' },
@@ -27,7 +24,6 @@
         { src: 'images/Sched-WeManage.png', alt: 'Schedule WeManage' },
     ];
   
-    // Array of images for the Bloggy application
     export let bloggyImages = [
         { src: 'images/LogIn-Bloggy.png', alt: 'Log In Bloggy' },
         { src: 'images/SignUp-Bloggy.png', alt: 'Sign Up Bloggy' },
@@ -36,14 +32,12 @@
         { src: 'images/Newsfeed-Bloggy.png', alt: 'Newsfeed Bloggy' },
     ];
   
-    // Array of images for NicheCentral UI Design section
     export let nicheCentralImages = [
         { src: 'images/UI design_niche1.png', alt: 'NicheCentral UI Design 1' },
         { src: 'images/UI design_niche2.png', alt: 'NicheCentral UI Design 2' },
         { src: 'images/UI design_niche3.png', alt: 'NicheCentral UI Design 3' }
     ];
-  
-    // Array of images for WeManage Simplified version section
+
     export let simplifiedWeManageImages = [
         { src: 'images/simplified_WeManage.png', alt: 'Simplified WeManage 1' },
         { src: 'images/simplified_WeManage1.png', alt: 'Simplified WeManage 2' },
