@@ -1,8 +1,12 @@
-<!-- src/routes/+layout.svelte -->
 <script>
+    // @ts-nocheck
     import "../app.css"; // Import your CSS styles
     import { onMount } from 'svelte';
     import { goto } from '$app/navigation';
+
+    // Correctly import icons from flowbite-svelte-icons
+    import { HomeOutline, FileLinesOutline, AddressBookSolid, FolderOpenSolid } from 'flowbite-svelte-icons';
+
     export let name = "PRINCESS DIANE RODRIGUEZ URBANO";
 
     onMount(() => {
@@ -12,7 +16,8 @@
 </script>
 
 <style>
-    .header {
+    /* Header styles */
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -21,29 +26,43 @@
         border-bottom: 2px solid #9948af;
         flex-wrap: wrap;
     }
+
     .title {
         font-weight: bold;
         color: #9948af;
         margin-left: 10px;
     }
-    .tabs {
+
+    /* Tabs styles */
+    nav.tabs {
         display: flex;
         flex-wrap: wrap;
     }
-    .tab {
+
+    nav.tabs a.tab {
         margin: 5px 10px;
         padding: 10px 20px;
         background-color: #d291ff;
         color: #9948af;
         text-decoration: none;
         font-weight: bold;
+        display: flex;
+        align-items: center;
     }
-    .tab:hover {
+
+    nav.tabs a.tab:hover {
         background-color: #9948af;
         color: #d291ff;
     }
 
-    .footer {
+   
+
+    .text-label {
+        display: inline; /* Initially show text */
+    }
+
+    /* Footer styles */
+    footer {
         background-color: #d291ff;
         color: white;
         text-align: left;
@@ -54,37 +73,59 @@
         height: 50px;
     }
 
+    /* Media query for smaller screens */
     @media (max-width: 768px) {
-        .header {
+        header {
             flex-direction: column;
             align-items: flex-start;
         }
-        .tabs {
+
+        nav.tabs {
             justify-content: center;
             width: 100%;
         }
-        .tab {
+
+        nav.tabs a.tab {
             flex: 1;
             text-align: center;
+            padding: 10px 0;
         }
+
+        .text-label {
+            display: none; /* Hide text labels on smaller screens */
+        }
+
+        
     }
 </style>
 
 <main>
-    <div class="header">
-        <div class="title">MY PORTFOLIO</div>
-        <div class="tabs">
-            <a class="tab" href="/Home">Home</a>
-            <a class="tab" href="/About">About</a>
-            <a class="tab" href="/Portfolio">Portfolio</a>
-            <a class="tab" href="/Contact">Contact</a>
-        </div>
-    </div>
+    <header>
+        <h1 class="title">MY PORTFOLIO</h1>
+        <nav class="tabs">
+            <a class="tab" href="/Home" aria-label="Home">
+                <HomeOutline class="icon" size="15" />
+                <span class="text-label">Home</span>
+            </a>
+            <a class="tab" href="/About" aria-label="About">
+                <FileLinesOutline class="icon" size="15" />
+                <span class="text-label">About</span>
+            </a>
+            <a class="tab" href="/Portfolio" aria-label="Portfolio">
+                <FolderOpenSolid class="icon" size="15" />
+                <span class="text-label">Portfolio</span>
+            </a>
+            <a class="tab" href="/Contact" aria-label="Contact">
+                <AddressBookSolid class="icon" size="15" />
+                <span class="text-label">Contact</span>
+            </a>
+        </nav>
+    </header>
 
     <!-- This slot will render the content of the current page -->
     <slot />
 </main>
 
-<div class="footer">
+<footer>
     {name}
-</div>
+</footer>

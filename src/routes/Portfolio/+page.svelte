@@ -38,10 +38,9 @@
   
     // Array of images for NicheCentral UI Design section
     export let nicheCentralImages = [
-        { src: 'images/UI design_niche.png', alt: 'NicheCentral UI Design 1' },
-        { src: 'images/UI design_niche1.png', alt: 'NicheCentral UI Design 2' },
-        { src: 'images/UI design_niche2.png', alt: 'NicheCentral UI Design 3' },
-        { src: 'images/UI design_niche3.png', alt: 'NicheCentral UI Design 4' }
+        { src: 'images/UI design_niche1.png', alt: 'NicheCentral UI Design 1' },
+        { src: 'images/UI design_niche2.png', alt: 'NicheCentral UI Design 2' },
+        { src: 'images/UI design_niche3.png', alt: 'NicheCentral UI Design 3' }
     ];
   
     // Array of images for WeManage Simplified version section
