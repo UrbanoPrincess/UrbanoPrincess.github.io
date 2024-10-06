@@ -6,9 +6,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        secondary: '#9948af', 
+        secondary: '#9948af', // Example color for secondary
         accent: '#000000', 
-        primary:'#2A0134'
       },
       fontFamily: {
         'pt-serif': ['PT Serif', 'serif'],
