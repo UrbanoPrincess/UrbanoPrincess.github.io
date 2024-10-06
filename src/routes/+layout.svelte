@@ -1,6 +1,6 @@
 <script>
     // @ts-nocheck
-    import "../app.css"; 
+    import '../app.css';
     import { onMount } from 'svelte';
     import { goto } from '$app/navigation';
     import { HomeOutline, FileLinesOutline, AddressBookSolid, FolderOpenSolid } from 'flowbite-svelte-icons';
