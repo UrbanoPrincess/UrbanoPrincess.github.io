@@ -43,69 +43,73 @@
         { src: 'images/simplified_WeManage1.png', alt: 'Simplified WeManage 2' },
         { src: 'images/simplified_WeManage2.png', alt: 'Simplified WeManage 3' }
     ];
-  </script>
+</script>
   
-  <style>
+<style>
+  
+    .pt-serif-bold-italic {
+        font-family: 'PT Serif', serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+
     .gallery-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #f7f7f7;
-    }
+    max-width: 1200px;
+    margin: 40px auto 0 auto; /* Adds a 40px top margin outside the container */
+    padding: 20px;
+    background-color: white;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
   
-    .gallery-title {
-        text-align: center;
-        font-size: 2.5rem;
-        color: #333;
-        margin-bottom: 20px;
-    }
-  
+
     .gallery {
         display: grid;
         gap: 16px;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
-  
+
     .we-manage-gallery, .bloggy-gallery, .niche-central-gallery, .simplified-wemanage-gallery {
         grid-template-columns: repeat(3, 1fr);
     }
-  
+
     .gallery-item {
         overflow: hidden;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s;
     }
-  
+
     .gallery-item img {
         width: 100%;
         height: auto;
         display: block;
     }
-  
+
     .gallery-item:hover {
         transform: scale(1.05);
     }
-  
+
     @media (max-width: 768px) {
         .gallery {
             grid-template-columns: 1fr;
         }
-        
+
         .we-manage-gallery, .bloggy-gallery, .niche-central-gallery, .simplified-wemanage-gallery {
             grid-template-columns: 1fr;
         }
     }
-  
+
     @media (max-width: 480px) {
-        .gallery-title {
-            font-size: 2rem;
-        }
+        
     }
-  </style>
+</style>
   
-  <div class="gallery-container">
-    <h2 class="gallery-title">Image Mapping</h2>
+<div class="gallery-container">
+    <h1 class="pt-serif-bold-italic text-3xl mb-4 text-secondary">Here are some of my projects:</h1>
+    
+    <h2 class="pt-serif-bold-italic text-3xl mb-4 text-secondary text-center">Image Mapping</h2>
     <div class="gallery image-mapping-gallery">
         {#each imageMapping as { src, alt }}
             <div class="gallery-item">
@@ -114,7 +118,7 @@
         {/each}
     </div>
   
-    <h2 class="gallery-title">Hide and Find Game</h2>
+    <h2 class="pt-serif-bold-italic text-3xl mb-4 text-secondary text-center">Hide and Find Game</h2>
     <div class="gallery game-gallery">
         {#each gameImages as { src, alt }}
             <div class="gallery-item">
@@ -123,7 +127,7 @@
         {/each}
     </div>
   
-    <h2 class="gallery-title">NicheCentral UI Design</h2>
+    <h2 class="pt-serif-bold-italic text-3xl mb-4 text-secondary text-center">NicheCentral UI Design</h2>
     <div class="gallery niche-central-gallery">
         {#each nicheCentralImages as { src, alt }}
             <div class="gallery-item">
@@ -132,7 +136,7 @@
         {/each}
     </div>
   
-    <h2 class="gallery-title">WeManage - Web-based Task Manager</h2>
+    <h2 class="pt-serif-bold-italic text-3xl mb-4 text-secondary text-center">WeManage - Web-based Task Manager</h2>
     <div class="gallery we-manage-gallery">
         {#each weManageImages as { src, alt }}
             <div class="gallery-item">
@@ -141,7 +145,7 @@
         {/each}
     </div>
   
-    <h2 class="gallery-title">WeManage Simplified Version</h2>
+    <h2 class="pt-serif-bold-italic text-3xl mb-4 text-secondary text-center">WeManage Simplified Version</h2>
     <div class="gallery simplified-wemanage-gallery">
         {#each simplifiedWeManageImages as { src, alt }}
             <div class="gallery-item">
@@ -150,7 +154,7 @@
         {/each}
     </div>
   
-    <h2 class="gallery-title">Bloggy: Blogging Web Application</h2>
+    <h2 class="pt-serif-bold-italic text-3xl mb-4 text-secondary text-center">Bloggy: Blogging Web Application</h2>
     <div class="gallery bloggy-gallery">
         {#each bloggyImages as { src, alt }}
             <div class="gallery-item">
@@ -158,5 +162,4 @@
             </div>
         {/each}
     </div>
-  </div>
-  
+</div>

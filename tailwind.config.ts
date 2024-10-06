@@ -6,9 +6,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#9948af', // Custom color for your project
-        secondary: '#14171A', // Another custom color if needed
-        accent: '#F5A623', // Example color
+        secondary: '#9948af', 
+        accent: '#000000', 
+        primary:'#2A0134'
+      },
+      fontFamily: {
+        'pt-serif': ['PT Serif', 'serif'],
       },
     },
   },

@@ -1,50 +1,79 @@
 <script>
+   
 </script>
 
 <style>
+    .pt-serif-regular {
+        font-family: 'PT Serif', serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .pt-serif-bold-italic {
+        font-family: 'PT Serif', serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+
     .about-container {
-        border: 5px solid #9948af;
-        border-radius: 10px;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: white; 
+        padding: 20px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: left;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .about-content {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .about-image {
+        width: 100%; 
+        height: auto; 
+        max-width: 300px;
+        margin-bottom: 20px;
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media (max-width: 768px) {
-        .flex-wrap {
-            flex-wrap: nowrap;
-        }
-        .w-40 {
-            width: 50%;
+      
+        .about-image {
+            width: 80%; 
         }
     }
 </style>
-
-<main class="font-merriweather text-black">
-    <div class="relative about-container bg-purple-600 text-black p-5 rounded-lg mx-auto my-10 max-w-3xl">
-        <div class="flex flex-col md:flex-row justify-center items-center">
-            <div class="flex-1 text-center mb-4 md:mb-0">
-                <h1 class="text-3xl font-bold mb-4">About Me</h1>
+<main class="pt-serif-regular text-accent">
+    <div class="my-10"> 
+        <div class="about-container text-accent p-5 rounded-lg mx-auto">
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <div class="flex-1 text-center mb-4 md:mb-0">
+                    <h1 class="text-3xl pt-serif-bold-italic mb-4 text-secondary">About Me</h1>
+                </div>
             </div>
-            <img src="images/about2.jpg" class="rounded-full w-28 h-28 border-4 border-white shadow-lg ml-4" alt="About Me">
+            
+           
+            <div class="content my-5 text-accent about-content">
+                <!-- svelte-ignore a11y-img-redundant-alt -->
+                <img src="images/intro.png" class="about-image rounded-lg border-4 border-white shadow-lg" alt="Profile Image">
+                <div class="about-text">
+                    <p class="pt-serif-regular text-lg">
+                        I’m Princess Diane Urbano, a 3rd-year BSIT student at Gordon College from Roosevelt, Dinalupihan, Bataan. My passion for technology and problem-solving drives me to continuously learn and grow in this field. However, my journey hasn't been without its challenges.
+                    </p>
+                    <p class="pt-serif-regular text-lg mt-4">
+                        There are many days when I find myself thinking, "Can I really do this?" Creativity sometimes eludes me, and I hesitate to try new things, fearing I’ll just mess them up. At times, I feel lost and unsure of whether what I'm doing is right. The fear of failure can be overwhelming, causing me to avoid challenges altogether. But these experiences have taught me resilience and the importance of perseverance.
+                    </p>
+                    <p class="pt-serif-regular text-lg mt-4">
+                        Despite these hurdles, I keep pushing forward. One of my most memorable experiences as a student developer began with my first proposed project: a simple to-do list for personal use. Working alongside my friend, I realized its potential to help others, which led us to transform it into a group manager application called "We Manage." Through continuous updates and collaboration, we simplified its features, making it more user-friendly and efficient. This project taught me the value of teamwork and the impact of technology in solving everyday problems.
+                    </p>
+                </div>
+            </div>
         </div>
-        
-        <!-- Content of About Me -->
-        <div class="content my-5 text-black">
-            <p>I’m Princess Diane Urbano, a 3rd-year BSIT student at Gordon College from Roosevelt, Dinalupihan, Bataan. My passion for technology and problem-solving drives me to continuously learn and grow in this field. However, my journey hasn't been without its challenges.</p>
-        </div>
-        <div>
-            <p class="text-black">There are many days when I find myself thinking, "Can I really do this?" Creativity sometimes eludes me, and I hesitate to try new things, fearing I’ll just mess them up. At times, I feel lost and unsure of whether what I'm doing is right. The fear of failure can be overwhelming, causing me to avoid challenges altogether. But these experiences have taught me resilience and the importance of perseverance.</p>
-        </div>
-        <div>
-            <p class="text-black" style="margin-top: 20px;">Despite these hurdles, I keep pushing forward. One of my most memorable experiences as a student developer began with my first proposed project: a simple to-do list for personal use. Working alongside my friend, I realized its potential to help others, which led us to transform it into a group manager application called "We Manage." Through continuous updates and collaboration, we simplified its features, making it more user-friendly and efficient. This project taught me the value of teamwork and the impact of technology in solving everyday problems.</p>
-        </div>
-    </div>
-
-    <div class="flex justify-between mx-8 mt-2 flex-wrap">
-        <!-- svelte-ignore a11y-img-redundant-alt -->
-        <img src="images/about4.jpg" class="w-40 h-40 object-cover rounded-lg border-4 border-white shadow-lg mr-2 mb-2" alt="Left Image">
-        <!-- svelte-ignore a11y-img-redundant-alt -->
-        <img src="images/about3.jpg" class="w-40 h-40 object-cover rounded-lg border-4 border-white shadow-lg mr-2 mb-2" alt="Right Image">
     </div>
 </main>

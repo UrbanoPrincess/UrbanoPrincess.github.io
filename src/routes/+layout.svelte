@@ -99,19 +99,19 @@
         <h1 class="title">MY PORTFOLIO</h1>
         <nav class="tabs">
             <a class="tab" href="/Home" aria-label="Home">
-                <HomeOutline class="icon" />
+                <HomeOutline style="width: 40px; height: 40px; margin-right: 5px;" />
                 <span class="text-label">Home</span>
             </a>
             <a class="tab" href="/About" aria-label="About">
-                <FileLinesOutline class="icon" />
+                <FileLinesOutline style="width: 40px; height: 40px; margin-right: 5px;" />
                 <span class="text-label">About</span>
             </a>
             <a class="tab" href="/Portfolio" aria-label="Portfolio">
-                <FolderOpenSolid class="icon" />
+                <FolderOpenSolid style="width: 40px; height: 40px; margin-right: 5px;" />
                 <span class="text-label">Portfolio</span>
             </a>
             <a class="tab" href="/Contact" aria-label="Contact">
-                <AddressBookSolid class="icon" />
+                <AddressBookSolid style="width: 40px; height: 40px; margin-right: 5px;" />
                 <span class="text-label">Contact</span>
             </a>
         </nav>

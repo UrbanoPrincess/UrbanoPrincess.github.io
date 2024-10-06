@@ -3,11 +3,9 @@
 </script>
 
 <style>
-    .about-container {
+    .contact-container {
         background-color: white; 
         padding: 20px;
-        border-radius: 10px;
-        border: 5px solid #9948af;
         margin: 40px auto; 
         width: 90%;
         max-width: 600px; 
@@ -37,7 +35,7 @@
     }
 
     @media (max-width: 768px) {
-        .about-container {
+        .contact-container {
             width: 95%; 
             padding: 15px; 
         }
@@ -47,13 +45,14 @@
             margin: 5px; 
         }
     }
+    
 </style>
 
 <main>
-    <div class="relative about-container">
-        <h1 class="text-3xl font-bold mb-4">Contact Me</h1>
+    <div class="relative contact-container">
+        <h1 class="text-3xl pt-serif-bold-italic mb-4 text-secondary">Contact Me</h1>
         <div class="content">
-            <p>You can reach me through the following platforms:</p>
+            <p class="pt-serif-regular text-lg mt-4">You can reach me through the following platforms:</p>
         </div>
         <div class="social-links">
             <a href="https://github.com/UrbanoPrincess/UrbanoPrincess.github.io">
