@@ -5,7 +5,7 @@
     import { goto } from '$app/navigation';
     import { HomeOutline, FileLinesOutline, AddressBookSolid, FolderOpenSolid } from 'flowbite-svelte-icons';
 
-    export let name = "PRINCESS DIANE RODRIGUEZ URBANO";
+    export let name = "Deployed by Sustainablers";
 
     onMount(() => {
    
