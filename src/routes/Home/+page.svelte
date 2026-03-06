@@ -14,31 +14,71 @@
         font-weight: 700;
         font-style: italic;
     }
+
     .home-container {
-        background-color: white; 
-        padding: 20px;
-        margin: 40px auto; 
-        width: 90%;
-        max-width: 800px; 
-        min-height: 200px; 
-        text-align: center; 
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        margin: 1.5rem auto 0 auto;
+        max-width: 880px;
+        background: #ffffff;
+        border-radius: 1.5rem;
+        padding: 2.25rem 2rem;
+        box-shadow:
+            0 18px 45px rgba(15, 23, 42, 0.16),
+            0 0 0 1px rgba(148, 163, 184, 0.2);
+        text-align: left;
+    }
+
+    .intro-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.75rem;
+    }
+
+    @media (min-width: 768px) {
+        .intro-header {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .intro-copy {
+        max-width: 30rem;
+    }
+
+    .intro-title {
+        letter-spacing: 0.03em;
+    }
+
+    .intro-lead {
+        color: #4b5563;
+    }
+
+    .intro-body {
+        color: #6b7280;
     }
 </style>
 
-<section class="home-container mx-auto p-5 max-w-3xl mt-20">
-    <header class="flex flex-col md:flex-row items-center justify-center mb-8">
+<section class="home-container">
+    <header class="intro-header mb-4">
         <div class="mb-4 md:mb-0 md:mr-8">
             <Avatar src="images/profile.png" class="rounded-full ring-2 ring-secondary dark:ring-secondary-500" />
         </div>
 
-        <article class="text-left max-w-md">
-            <!-- Title using PT Serif Bold Italic -->
-            <h1 class="pt-serif-bold-italic text-3xl mb-4 text-secondary">Welcome to My Portfolio!</h1>
+        <article class="intro-copy">
+            <h1 class="pt-serif-bold-italic intro-title text-3xl md:text-4xl mb-3 text-secondary">
+                Welcome to my portfolio
+            </h1>
 
-            <!-- Content using PT Serif Regular -->
-            <p class="pt-serif-regular text-lg">Hi! I'm Princess Diane Urbano, a 3rd-year BSIT student at Gordon College from Roosevelt, Dinalupihan, Bataan.</p>
-            <p class="pt-serif-regular text-lg mt-4">I am passionate about learning and exploring various aspects of information technology. I enjoy developing my skills in software development and collaborating on projects that aim to address real-world challenges.</p>
+            <p class="pt-serif-regular intro-lead text-lg mb-3">
+                Hi, I'm Princess Diane Urbano, a 3rd-year BSIT student at Gordon College from Roosevelt,
+                Dinalupihan, Bataan.
+            </p>
+            <p class="pt-serif-regular intro-body text-base md:text-lg">
+                I’m passionate about learning and exploring different areas of information technology.
+                I enjoy building software, sharpening my skills, and collaborating on projects that
+                solve real-world problems and create meaningful impact.
+            </p>
         </article>
     </header>
 </section>
