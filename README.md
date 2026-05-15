@@ -1,6 +1,6 @@
 # Hi there 👋 I'm Princess Diane Rodriguez (@UrbanoPrincess)
 
-🚀 QA Automation Engineer OJT @ EasyPos Solutions Inc.  
+🚀 Automation QA Intern @ EasyPos Solutions Inc.  
 📍 Bataan, Philippines  
 💻 Passionate about building, testing, and breaking things (in a good way 😄)
 
